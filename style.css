@@ -31,7 +31,11 @@
   --btn-equal: #ffffff;
   --btn-equal-bg: #223323;
 
-  --bg-gradient: linear-gradient(to right, #141e30, #243b55);
+  --bg-gradient: linear-gradient(
+    to bottom right,
+    rgb(14, 2, 57),
+    rgb(36, 1, 2)
+  );
 }
 
 * {
@@ -43,16 +47,23 @@
 }
 
 body {
+  min-height: 100vh;
   font-family: sans-serif;
-}
-
-body {
   background-image: var(--bg-gradient);
 }
 
+h1 {
+  text-align: center;
+  color: white;
+  margin-top: 3rem;
+}
+
+h1 a {
+  color: burlywood;
+}
+
 .container {
-  height: 100vh;
-  width: 100vw;
+  padding-top: 5rem;
   display: grid;
   place-items: center;
 }
@@ -63,7 +74,8 @@ body {
   width: auto;
   padding: 20px;
   border-radius: 10px;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
   background-color: var(--calculator-bg);
 }
 
