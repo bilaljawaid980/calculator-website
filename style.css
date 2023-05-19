@@ -10,6 +10,12 @@
   --btn-operator-bg: #ffd0fb;
   --btn-equal: #000;
   --btn-equal-bg: #adf9e7;
+
+  --bg-gradient: linear-gradient(
+    to bottom right,
+    rgba(79, 51, 176, 1),
+    rgba(210, 53, 165)
+  );
 }
 
 .dark {
@@ -24,6 +30,8 @@
   --btn-operator-bg: #2e1f39;
   --btn-equal: #ffffff;
   --btn-equal-bg: #223323;
+
+  --bg-gradient: linear-gradient(to right, #141e30, #243b55);
 }
 
 * {
@@ -38,9 +46,8 @@ body {
   font-family: sans-serif;
 }
 
-
 body {
-    background-image: linear-gradient( to bottom right, rgba(79, 51, 176, 1.0), rgba(210, 53, 165));
+  background-image: var(--bg-gradient);
 }
 
 .container {
