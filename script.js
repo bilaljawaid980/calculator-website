@@ -26,4 +26,16 @@ buttons.forEach((item) => {
 
 function toggleTheme() {
   document.body.classList.toggle("dark");
+  const isDark = document.body.classList.contains("dark");
+
+  localStorage.setItem("isDarkTheme", isDark);
 }
+
+// Retrieve theme preference from local storage on page load
+window.addEventListener("DOMContentLoaded", () => {
+  const isDarkTheme = localStorage.getItem("isDarkTheme");
+
+  if (isDarkTheme === "true") {
+    document.body.classList.add("dark");
+  }
+});
