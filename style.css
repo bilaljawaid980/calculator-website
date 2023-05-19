@@ -40,12 +40,7 @@ body {
 
 
 body {
-<<<<<<< Updated upstream
     background-image: linear-gradient( to bottom right, rgba(79, 51, 176, 1.0), rgba(210, 53, 165));
-=======
-  background-color: #000000;
-  /* background-image: linear-gradient( to bottom right, rgba(79, 51, 176, 1.0), rgba(210, 53, 165)); */
->>>>>>> Stashed changes
 }
 
 .container {
